@@ -12,28 +12,50 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Task1, function (sprite, otherSp
         if (task2AnswerA == 1) {
             decision2A()
             question3A()
+            if (task3AnswerA == 1) {
+            	
+            } else if (task3AnswerA == 2) {
+            	
+            } else {
+                game.splash("invalid input")
+            }
         } else if (task2AnswerA == 2) {
             // death
             decision2B()
         } else {
-            game.splash("invalid imput")
+            game.splash("invalid input")
         }
     } else if (task1Answer == 2) {
         decision1B()
         welcomeToTheVillage()
         question2B()
         if (task2AnswerB == 1) {
+            let task3AnswerC = 0
             decision2C()
             create_map_2()
             question3C()
+            if (task3AnswerC == 1) {
+            	
+            } else if (task3AnswerC == 2) {
+            	
+            } else {
+                game.splash("invalid input")
+            }
         } else if (task2AnswerB == 2) {
             decision2D()
             question3D()
+            if (task3AnswerD == 1) {
+            	
+            } else if (task3AnswerD == 2) {
+            	
+            } else {
+                game.splash("invalid input")
+            }
         } else {
-            game.splash("invalid imput")
+            game.splash("invalid input")
         }
     } else {
-        game.splash("invalid imput")
+        game.splash("invalid input")
     }
 })
 function decision2D () {
@@ -366,13 +388,13 @@ function decision2B () {
     pause(2000)
     game.over(false, effects.splatter)
 }
-let task3AnswerD = 0
 let villager2: Sprite = null
-let task3AnswerA = 0
 let king: Sprite = null
 let villager1: Sprite = null
 let mySprite: Sprite = null
+let task3AnswerD = 0
 let task2AnswerB = 0
+let task3AnswerA = 0
 let task2AnswerA = 0
 let task1Answer = 0
 create_map()
