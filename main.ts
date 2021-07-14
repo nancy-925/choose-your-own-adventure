@@ -343,6 +343,9 @@ function decision2A () {
 function create_map () {
     tiles.setTilemap(tilemap`level1`)
 }
+function decision3B () {
+    mySprite.say("press 2 for \"thank you for the kind offer, but i'll pass.")
+}
 function villager3 () {
     villager2 = sprites.create(img`
         . f f f . f f f f . f f f . 
